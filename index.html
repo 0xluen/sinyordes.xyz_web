@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SinyorDes</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link media="all" type="text/css" rel="stylesheet" href="assets/others/pro.min.css">
+<link rel="shortcut icon" href="assets/others/hype.html" type="image/x-icon">
+<script type="text/javascript" src="assets/javascript/jquery.js"></script>
+<script type="text/javascript" src="assets/javascript/app.js"></script>
+</head>
+<body>
+<div id="overlay">
+<div id="main">
+<table class="box">
+ <tbody>
+<tr><td><span id="line1" style="white-space:pre;"></span></td></tr>
+<tr><td><span id="line2" style="white-space:pre;"></span></td></tr>
+<tr><td><span id="line3 space" style="white-space:pre;"></span></td></tr>
+<tr><td><span id="line4" style="white-space:pre;"></span></td></tr>
+</tbody>
+</table>
+</div>
+<div class="container" style="display: none;">
+<h1 class="brand-header">SinyorDes</h1>
+ <a href="about.html" target="_BLANK">About</a><br>
+<I> sinyordes@protonmail.com </I><br>
+ <I> Music : Burak Yeter-Oh My My </I>
+</div>
+<div class="background" style="display: none;">
+<i class="play-button fa fa-volume-up " onclick="playAudio();"></i>
+<i class="pause-button fa fa-volume-down" onclick="pauseAudio();"></i>
+<div id="pattern"></div>
+<audio id="audio" loop="">
+<source src="assets/others/video.mp4" type="audio/mp4">
+<script>
+var audio = document.getElementById("audio");
+app.audioElement = audio;
+app.audioElement.volume = 0;
+</script>
+</audio>
+<video id="background" loop="">
+<source src="assets/others/video.mp4" type="video/mp4">
+<script>
+var video = document.getElementById("background");
+app.videoElement = video;
+app.videoElement.volume = 0;
+</script>
+</video>
+<script type="text/javascript">
+function getElementsById(ids) {
+var idList = ids.split(" ");
+var results = [], item;
+for (var i = 0; i < idList.length; i++) {
+item = document.getElementById(idList[i]);
+if (item) {
+results.push(item);
+}
+}
+return(results);
+}
+var x = document.getElementById("audio");
+function playAudio() {
+x.play();
+}
+function pauseAudio() {
+x.pause();
+}
+ </script>
+</div>
+<div class="top-right">
+<i><a class="skip skajp fa fa-fast-forward"></a></i>
+</div>
+</div>
+<link rel="stylesheet" type="text/css" href="assets/others/animate.min.css">
+<link rel="stylesheet" type="text/css" href="assets/stylesheets/stylesheet.min.css">
+<script type="text/javascript" src="assets/javascript/lib/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="assets/javascript/lib/jquery.marquee.min.js"></script>
+<script type="text/javascript" src="assets/javascript/lib/jquery.cookie.min.js"></script>
+<script type="text/javascript" src="assets/javascript/lib/typed.min.js"></script>
+<script type="text/javascript" src="assets/javascript/portfolio.js"></script>
+</body>
+
+</html>
