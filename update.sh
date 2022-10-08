@@ -1,7 +1,7 @@
 #!/bin/bash
 while :
 do
-	sleep 2
+	sleep 50
 	git pull
 	echo "Update control ... "
 done
